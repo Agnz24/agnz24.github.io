@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agnes Reena | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f3f4f6, #e3f2fd);
+      color: #212529;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header, section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem 2.5rem;
+      background: #ffffffcc;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    header:hover, section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    h1, h2, h3 {
+      color: #0077b6;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    h2 {
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 0.3rem;
+      margin-top: 1rem;
+      font-size: 1.4rem;
+    }
+
+    a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #023e8a;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: '\2022';
+      color: #0077b6;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .project {
+      margin-bottom: 1.5rem;
+      transition: background 0.3s ease;
+      border-left: 4px solid #0077b6;
+      padding-left: 1rem;
+    }
+
+    .project:hover {
+      background: #f1faff;
+      border-color: #023e8a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #6c757d;
+      font-size: 0.95rem;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header id="home">
+  <h1>👋 Hi, I’m <strong>Agnes Reena R J</strong></h1>
+  <p>Backend Developer | AI/ML Enthusiast | Cloud Deployment Learner</p>
+  <p>Gold Medalist in B.Tech Computer Science and Engineering — CGPA 9.52/10</p>
+  <p>
+    <a href="mailto:agnzreenawin6@gmail.com">📧 agnzreenawin6@gmail.com</a> |
+    <a href="https://www.linkedin.com/in/agnesreena" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/Agnz24" target="_blank">GitHub</a>
+  </p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a Computer Science graduate passionate about building reliable backend systems, scalable AI integrations,
+    and intuitive web applications. My work focuses on combining Python, FastAPI, and cloud deployment tools to deliver
+    seamless and efficient user experiences.
+  </p>
+  <p>
+    I’ve also explored mobile app development using React Native and Expo, and built AI-powered tools that merge my
+    interest in machine learning with practical problem-solving.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><strong>Languages:</strong> Python, JavaScript, C</li>
+    <li><strong>Frameworks & Libraries:</strong> FastAPI, Streamlit, React Native, Expo SDK 5</li>
+    <li><strong>Web Development:</strong> HTML5, CSS3</li>
+    <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+    <li><strong>Cloud & DevOps:</strong> Git, GitHub, AWS EC2, Render, Railway</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>SkillSwap (2025)</h3>
+    <p>Barter-inspired platform for exchanging skills through peer-to-peer sessions instead of payment.</p>
+    <ul>
+      <li>Integrated Supabase for auth, ratings, and real-time booking sync.</li>
+      <li>Built responsive UI with timezone-safe ISO handling and cross-device consistency.</li>
+      <li><strong>Result:</strong> Deployed stable, money-free learning experience improving engagement.</li>
+    </ul>
+    <a href="https://github.com/Agnz24/SkillSwap" target="_blank">🔗 GitHub Repo</a>
+  </div>
+
+  <div class="project">
+    <h3>Virtual AI World (2025)</h3>
+    <p>Modular multi-agent AI assistant system with web and CLI interfaces.</p>
+    <ul>
+      <li>Developed modular agents (SalesAgent, StrategyAgent, CRMAgent) with local LLM (Gemma 2B).</li>
+      <li>Built partial web interface with live feedback and memory persistence.</li>
+      <li><strong>Result:</strong> Delivered a functional prototype demonstrating real-time multi-agent logic.</li>
+    </ul>
+    <a href="https://github.com/Agnz24/virtual_ai_world" target="_blank">🔗 GitHub Repo</a>
+  </div>
+
+  <div class="project">
+    <h3>Anonymous Unanimous (2025)</h3>
+    <p>Community emergency alert system built with FastAPI and Railway Cloud.</p>
+    <ul>
+      <li>Developed QR-based registration and SMS middleware routing.</li>
+      <li><strong>Result:</strong> Enabled secure, real-time emergency communication for local communities.</li>
+    </ul>
+    <a href="https://github.com/Agnz24/fastapi-sms-server" target="_blank">🔗 GitHub Repo</a>
+  </div>
+
+  <div class="project">
+    <h3>Guide My SkinBot (2024)</h3>
+    <p>Facial flaw detection and skincare recommendation tool.</p>
+    <ul>
+      <li>Used Python, dlib, OpenCV for flaw analysis and Streamlit for frontend UI.</li>
+      <li><strong>Result:</strong> Delivered AI-driven skincare insights based on uploaded photos.</li>
+    </ul>
+    <a href="https://github.com/Agnz24/guidemyskinbot-with-flaw-detection" target="_blank">🔗 GitHub Repo</a>
+  </div>
+</section>
+
+<section id="internships">
+  <h2>Internships</h2>
+  <ul>
+    <li><strong>DATUM Technologys (Feb–Mar 2024):</strong> Optimized database performance and normalization using MySQL.</li>
+    <li><strong>RORA Basket (Apr 2023):</strong> Enhanced customer app features via REST APIs and backend debugging.</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p><strong>B.Tech, Computer Science and Engineering</strong><br>
+     Hindustan Institute of Technology and Science, Chennai (2021–2025)<br>
+     <strong>CGPA:</strong> 9.52 | <strong>Gold Medalist</strong>
+  </p>
+
+  <h3>Certifications</h3>
+  <ul>
+    <li>Full Stack Web Development – Blend Vidya</li>
+    <li>Introduction to Internet of Things – NPTEL</li>
+    <li>AWS Academy Cloud Foundations</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:agnzreenawin6@gmail.com">agnzreenawin6@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/agnesreena" target="_blank">linkedin.com/in/agnesreena</a></p>
+  <p>GitHub: <a href="https://github.com/Agnz24" target="_blank">github.com/Agnz24</a></p>
+  <p>Phone: +91 7010766344</p>
+</section>
+
+<footer>
+  <p>© 2025 Agnes Reena. Built with ❤️.</p>
+</footer>
+
+</body>
+</html>
